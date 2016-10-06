@@ -27,3 +27,10 @@ TODO: Write history
 Alek Hartzog
 Eric Hartzog
 
+## To Dos
+
+1) Determine how to detect a numerical value followed by a unit symbol on hover
+2) Write script that will detect when a numerical value followed by a unit symbol being hovered over
+3) Create a set of unit conversions (inches to centimeters, feet to meters, etc and vice versa)
+4) Return the converted value
+

@@ -20,7 +20,6 @@
 		tooltipId: "tooltip",
 		offsetDefault: 15
 	};
-
 	var _tooltips = [];
 	var _tooltipsTemp = null;
 
@@ -30,7 +29,23 @@
 			_tooltips = [];
 		}
 
-		Array.prototype.forEach.call(document.querySelectorAll("[data-tooltip]"), function(elm, idx) {
+		Array.prototype.forEach.call(document.querySelectorAll("p"), function(elm, idx) {
+			console.log(elm.innerHTML);
+			var words = elm.innerHTML.split(' ');
+			var i;
+			for (i = 0; i < words.length; i++) {
+				if(words[i].substr(-1) == 'm') {
+					var tooltipText = "coverted form of " + words[i];
+
+					elm.addEventListener("mousemove", _onElementMouseMove);
+					elm.addEventListener("mouseout", _onElementMouseOut);
+					elm.addEventListener("mouseover", function(event) {
+						return _onElementMouseOver(event, tooltipText);
+					});
+					break;
+				}
+			}
+			/*
 			var tooltipText = elm.getAttribute("title").trim();
 			var options;
 
@@ -59,6 +74,7 @@
 				elm.addEventListener("mouseout", _onElementMouseOut);
 				elm.addEventListener("mouseover", _onElementMouseOver);
 			}
+			*/
 		});
 
 		if (resetTooltips) {
@@ -107,9 +123,9 @@
 		}
 	}
 
-	function _onElementMouseOver(evt) {
-		var tooltipId = this.getAttribute("data-tooltip-id");
-		var tooltipText = tooltipId && _tooltips[tooltipId] && _tooltips[tooltipId].text;
+	function _onElementMouseOver(evt, tooltipText) {
+		// var tooltipId = this.getAttribute("data-tooltip-id");
+		// var tooltipText = tooltipId && _tooltips[tooltipId] && _tooltips[tooltipId].text;
 
 		if (tooltipText) {
 			_createTooltip(tooltipText);

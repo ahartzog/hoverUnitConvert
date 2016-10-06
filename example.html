@@ -31,65 +31,7 @@
 					<div class="page-container">
 						<div class="block">
 							<h2 class="block-head block-passage">Tooltips through data-attributes</h2>
-							<p>This tooltip script is a basic example of how <span class="pre">data</span> attributes can be used to add a tooltip functionality to DOM elements. The tooltips are created for each element by reading out the <span class="pre">title</span> attribute. Additionally the tooltip offset can be configured by passing a JSON option string to the <span class="pre">data</span> attribute. This concept comes from <a href="http://angularjs.org">AngularJS</a> and provides a quick extensibility.</p>
-						</div>
-					</div>
-				</div>
-				<div class="fullwidth separator">
-					<div class="page-container">
-						<div class="block">
-							<h2 class="block-head">Demo</h2>
-							<p>
-								<span data-tooltip title="I'm a tooltip text" class="cursor">Tooltip demo 1 (hover here)</span>
-							</p>
-							<p>
-								<span data-tooltip="{ 'offset': 30 }" title="I'm another tooltip text" class="cursor">Tooltip demo 2 (hover here)</span>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="fullwidth separator">
-					<div class="page-container">
-						<div class="block">
-							<h2 class="block-head">Facts</h2>
-							<p>Here are some key facts that should provide a short overview of what Tooltip.js is and how it works:</p>
-							<ul class="list">
-								<li>Configuration via HTML and data attributes</li>
-								<li>Customizable via CSS</li>
-								<li>Extensible (JavaScript code is about 100 lines)</li>
-								<li>Runs in all major browsers and Internet Explorer 9+</li>
-								<li>No external dependencies</li>
-							</ul>
-							<p>So the script is very basic and can be extended with various features. It's meant to be a learning example of how a tooltip functionality can be realized by using <span class="pre">data</span> attributes and parsing JSON string options.</p>
-						</div>
-					</div>
-				</div>
-				<div class="fullwidth separator">
-					<div class="page-container">
-						<div class="block">
-							<h2 class="block-head">Usage</h2>
-							<p>After <a href="https://github.com/matthias-schuetz/Tooltip">downloading the package</a> from GitHub, you just need to include the JavaScript file in the HTML code of your site. That's it. Any further configuration is optional. From this point, when the HTML page has been loaded, all elements having the <span class="pre">data</span> attribute "data-tooltip" will be processed and provided with the tooltip functionality. The tooltip text comes from an additional <span class="pre">title</span> attribute. A sample element looks like this:</p>
-							<pre>
-&lt;div <span>data-tooltip</span> <span>title</span>=<span class="alt">"I'm a tooltip text"</span>&gt;Demo&lt;/div&gt;</pre>
-							<p>You can also specify a custom offset for each tooltip by using a JSON option string:</p>
-							<pre>
-&lt;div <span>data-tooltip=<span class="alt">"{ 'offset': 10 }"</span></span> <span>title</span>=<span class="alt">"I'm a tooltip text"</span>&gt;Demo&lt;/div&gt;</pre>
-							<p>This would set the tooltip offset (relative to the mouse cursor) to 10 pixels for this element. It has to be said that this is a very basic implementation of parsing a JSON option string. So you'll have to use the single quotes for attributes in order to make <span class="pre">JSON.parse</span> work. If you want to omit the single quotes you could use a library like the <a href="https://github.com/politician/relaxed-json-parser">relaxed JSON parser</a>.</p>
-							<p>In addition you may set the default options which contain values for <em>tooltipId</em> and <em>offsetDefault</em>. This will affect all tooltips on the page. You can do this by using the following code:</p>
-							<pre>
-tooltip.setOptions({
-	tooltipId: "example",
-	offsetDefault: 20
-});</pre>
-							<p>Finally we will have a look at the CSS configuration of the tooltip. There's always one <span class="pre">div</span> element added and removed to the <span class="pre">body</span> element when hovering over a tooltip source element. By default this <span class="pre">div</span> element has the <span class="pre">id</span> "tooltip". So the CSS is very basic to style the tooltip:</p>
-							<pre>
-#tooltip {
-	position:absolute;
-	background:#DB2A64;
-	color:#ffffff;
-	padding:8px;
-}</pre>
-						<p>That's all. As the Tooltip.js script is very basic, all tooltips on a page share the same look. You can go ahead and extend the script if you want to use different styles for each tooltip.</p>
+							<p>This is a stupid test 1m 1ft 1cm 1mile</p>
 						</div>
 					</div>
 				</div>

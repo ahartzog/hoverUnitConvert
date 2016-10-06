@@ -1,6 +1,13 @@
 # hoverUnitConvert
 
-A tool to detect units being hovered over and convert them from imperial to metric and vice versa
+A tool to detect units being hovered over and convert them from imperial to metric and vice versa. It will convert:
+
+* mm <--> in
+* cm <--> in
+* meters <--> feet
+* kilometers <--> miles
+* grams <--> lbs
+
 
 ## Installation
 

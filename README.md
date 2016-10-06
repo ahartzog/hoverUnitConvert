@@ -1,6 +1,6 @@
 # hoverUnitConvert
 
-A tool designed to detect units being hovered over and convert them
+A tool to detect units being hovered over and convert them from imperial to metric and vice versa
 
 ## Installation
 
